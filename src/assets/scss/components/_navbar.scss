@@ -1,0 +1,99 @@
+@use '@/assets/scss/base/color';
+
+.navigation-controller {
+  position: fixed;
+  right:0;
+  z-index:1;
+  display:flex;
+  justify-content: end;
+  padding: 15px;
+  .profile-picture {
+    cursor:pointer;
+    height:35px;
+  }
+  .navigation-controller__burger {
+    cursor:pointer;
+    width:35px;
+    height:35px;
+    margin-left:15px;
+  }
+  a {
+    color:color.$white;
+  }
+}
+
+.nav {
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  position:fixed;
+  height:calc(100vh - 70px);
+  max-width:60%;
+  z-index:999;
+  right:0;
+  background-color:color.$dark-grey;
+  transform: translate(100%, 0);
+  transition: transform 0.5s;
+
+  .nav__top {
+    text-align: right;
+    border-bottom:1px solid #444;
+    padding:20px 10px 20px;
+    div {
+      text-align: center;
+    }
+    .nav__burger--closeoption {
+      text-align: right;
+      cursor:pointer;
+      height:20px;
+      width:20px;
+      margin-bottom: 10px;
+    }
+    .nav__bigScreen {
+      display:none;
+    }
+  }
+
+  .nav__list {
+    text-align: left;
+    list-style: none;
+    padding:0;
+    margin:0;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    display:flex;
+    width:14rem;
+
+    .nav__item {
+      width: 100%;
+      a {
+        color:#eee;
+        text-decoration: none;
+        display:block;
+        padding:10px 0 10px 30px;
+        &:hover {
+          background-color:color.$dark-blue;
+        }
+      }
+    }
+    .nav__item:first-child {
+      margin-top:10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    transform:none;
+    height:100%;
+  }
+  .navigation-controller {
+    transform:translate(-350%, 0);
+    .poo {
+      display:none;
+    }
+  }
+  .nav__top img {
+    display:none;
+  }
+}

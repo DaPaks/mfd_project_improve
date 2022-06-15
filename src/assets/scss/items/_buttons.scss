@@ -1,0 +1,10 @@
+@use '@/assets/scss/base/color';
+
+
+.gradient-button {
+  color:color.$white;
+  background:color.$gradient;
+  border:none;
+  border-radius:3px;
+  padding:10px 20px;
+}

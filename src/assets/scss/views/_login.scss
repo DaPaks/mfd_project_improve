@@ -1,0 +1,107 @@
+@use '@/assets/scss/base/color';
+
+.login h2, .login {
+  margin-bottom: 5px;
+}
+
+.form__link {
+  color: color.$white;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.social {
+  text-align:left;
+  div {
+    height:50px;
+    width:50px;
+    margin: 0 20px 0 0;
+    display:inline-block;
+    cursor:pointer;
+    border-radius: 5px;
+  }
+  div:hover {
+    background-color:rgba(255,255,255,.2);
+  }
+  &__google {
+    background-image:url('@/assets/media/google.png');
+    background-size:contain;
+  }
+  &__facebook {
+    background-image:url('@/assets/media/facebook.png');
+    background-size:contain;
+  }
+}
+
+.form__separater {
+  margin: 0 0 20px; 
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.form__separater::before,
+.form__separater::after {
+  content: "";
+  flex: 1 1;
+  border-bottom:1px solid color.$white;
+  margin:auto;
+}
+
+.form__separater::before {
+  margin-right:16px;
+}
+.form__separater::after {
+  margin-left:16px;
+}
+
+#login-form, #signup-form {
+  margin:0 auto;
+  text-align:left;
+  color:color.$white;
+
+  label {
+    display:block;
+  }
+
+  input {
+    box-sizing: border-box;
+    display:block;
+    margin:5px 0 20px;
+    padding:5px;
+    width:100%;
+    background-color:color.$white;
+    border:2px solid color.$white;
+    border-radius: 3px;
+  }
+
+  button {
+    margin-top:10px;
+    width:100%;
+    font-weight: bold;
+    cursor:pointer;
+  } 
+
+  .error {
+    color: color.$red;
+  }
+
+  .password-position {
+    position:relative;
+
+    #forgot-password {
+      position:absolute;
+      top:0;
+      right:0;
+      text-align: right;
+    }
+  }
+
+  .form__terms {
+    display:inline-block;
+    width:auto;
+    margin-right:10px;
+  }
+  
+  
+}

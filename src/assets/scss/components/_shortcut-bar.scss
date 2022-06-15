@@ -1,0 +1,81 @@
+@use '@/assets/scss/base/color';
+
+
+.shortcutBar{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    position:fixed;
+    z-index:9999;
+    bottom:-1px;
+    width:100%;
+    height:70px;
+    background-color: color.$dark-grey;
+    &__list{
+        display: flex;
+        //grid-template-columns: repeat(5, 1fr);
+        list-style: none;
+        height:100%;
+        margin:auto;
+        align-items: center;
+        padding:0px;
+    }
+    &__item{
+        margin:auto;
+        display:block;
+        height:100%;
+        width:100%;
+    }
+    &__route{
+        text-align: center;
+        text-decoration: none;
+        height:100%;
+        width:100%;
+        color:color.$white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item:hover {
+        background-color:color.$dark-blue;
+    }
+    &__img{
+        height:23px;
+        margin:0;
+        padding:0;
+    }
+    &__name{
+        padding:0;
+        margin:0;
+        font-size:.7em;
+    }
+}
+// Desktop
+@media screen and (min-width: 1024px){
+    .shortcutBar{
+        left:0;
+        height:80%;
+        width:70px;
+        padding:10% 0;
+        &__list{
+            display: block;
+            height:100%;
+        }
+        &__item{
+            height:20%;
+            display: block;
+            padding:8%;
+            width:86%;
+        }
+    }
+}
+
+// tablets
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+// smartphones
+@media screen and (max-width: 768px){
+
+}
+

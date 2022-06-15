@@ -1,0 +1,22 @@
+@use '@/assets/scss/base/color';
+
+.locationWrapper {
+    &__inputfield {
+        background-color:color.$dark-grey;
+        border:none;
+        color:white;
+        padding:2%;
+        border-radius: 6px 0 0 6px;
+    }
+    &__button {
+        text-align: center;
+        padding: 2%;
+        background-color: color.$blue;
+        border: none;
+        border-radius: 0 6px 6px 0;
+    }
+    &__image {
+        width: 12px;
+        height: 12px;
+    }
+}

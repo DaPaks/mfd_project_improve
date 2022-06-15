@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="128.398 75.309 22 22" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear_283_1964" x1="4.44314" y1="1.07843" x2="18.5922" y2="18.8941" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F76652"/>
+      <stop offset="0.6354" stop-color="#F35050"/>
+      <stop offset="1" stop-color="#B61212"/>
+    </linearGradient>
+    <filter id="filter0_i_283_1964" x="5.43506" y="3.88232" width="3.36475" height="7.36475" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_283_1964"/>
+    </filter>
+    <filter id="filter1_i_283_1964" x="7.07471" y="13.1138" width="4.22754" height="8.22754" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_283_1964"/>
+    </filter>
+    <filter id="filter2_i_283_1964" x="11.9922" y="7.24707" width="2.76074" height="6.76074" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_283_1964"/>
+    </filter>
+    <filter id="filter3_i_283_1964" x="15.3569" y="13.1138" width="1.38037" height="5.38037" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_283_1964"/>
+    </filter>
+  </defs>
+  <circle cx="11" cy="11" r="11" fill="url(#paint0_linear_283_1964)" transform="matrix(1, 0, 0, 1, 128.397707, 75.308603)"/>
+  <g filter="url(#filter0_i_283_1964)" transform="matrix(1, 0, 0, 1, 128.397707, 75.308603)">
+    <circle cx="7.11741" cy="5.56468" r="1.68235" fill="#F8A6A6"/>
+  </g>
+  <g filter="url(#filter1_i_283_1964)" transform="matrix(1, 0, 0, 1, 128.397707, 75.308603)">
+    <circle cx="9.18843" cy="15.2275" r="2.11373" fill="#F8A6A6"/>
+  </g>
+  <g filter="url(#filter2_i_283_1964)" transform="matrix(1, 0, 0, 1, 128.397707, 75.308603)">
+    <circle cx="13.3726" cy="8.62746" r="1.38039" fill="#F8A6A6"/>
+  </g>
+  <g filter="url(#filter3_i_283_1964)" transform="matrix(1, 0, 0, 1, 128.397707, 75.308603)">
+    <circle cx="16.0471" cy="13.804" r="0.690196" fill="#F8A6A6"/>
+  </g>
+</svg>

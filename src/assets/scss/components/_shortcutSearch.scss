@@ -1,0 +1,31 @@
+@use '@/assets/scss/base/color';
+@use '@/assets/scss/base/typography';
+
+.shortcut-search{
+  background-color:color.$dark-blue;
+  border:none;
+  color:white;
+  padding:2%;
+  background-image: url('@/assets/media/search.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:15px;
+  background-origin: content-box;
+}
+.shortcutSelector{
+    display: block;
+    position: fixed;
+    width:calc(14rem - 50px);
+    margin-top:-2px;
+    padding:1 2;
+    margin-left:15px;
+    font-family: typography.$baloo2;
+    font-size: 1em;
+    background-color:color.$dark-blue;
+    border: none;
+    color:white;
+    border-radius:0 0 5% 5%;
+    &__shortcutItem{
+        padding:2%;
+    }
+}

@@ -1,0 +1,142 @@
+@use '@/assets/scss/base/color';
+
+.moonanimation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    p {
+      margin:0;
+      padding:0;
+    }
+
+    &__moon {
+      width: 150px;
+      position: relative;
+    }
+
+    &__circlecenter {
+      margin-top: 50px;
+        position: relative;
+        display:flex;
+        justify-content: center;
+    } 
+
+    &__circle {
+        --w: 150px;
+        background-color: color.$dark-blue;
+        border-radius: 50%;
+        color: #FFF;
+        height: var(--w);
+        margin-bottom: 1rem;
+        width: var(--w);      
+    }
+    
+    &__aslide {
+      position: absolute;
+        --animdel: var(--moonage);
+        --animdur: 1s;
+        --animn: slide;
+    }
+
+    
+    &__label{
+      margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    &__input{
+        margin: 1em 0;
+        width: 80%;
+        background: linear-gradient(135deg, #5643A3 0%, #1B2E72 100%);
+    }
+    &__data{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    &__moonrise{
+        grid-column: 1/2;
+        text-align: center;
+        padding-top: 7%;
+        &__img{
+            width: 20px;
+        }
+    }
+    &__currentdate{
+        grid-column: 2/3;
+        text-align: center;
+        &__p{
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+    }
+    &__moonset{
+        grid-column: 3/4;
+        text-align: center;
+        padding-top: 7%;
+        &__img{
+            width: 20px;
+        }
+    }
+
+    &__info {
+      grid-column: 1/4;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom:7px;
+      margin-bottom:-12px;
+      :hover {
+        border-radius: 5px;
+        background-color:color.$dark-grey;
+      }
+      div {
+        width:100%;
+        cursor:pointer;
+      }
+      .hovereffect {
+        background-color:color.$dark-grey;
+      }
+      h3 {
+        margin:0;
+        padding:0;
+      }
+      
+    }
+
+    &__infobox {
+      grid-column: 1/4;
+      text-align:left;
+      background-color:color.$dark-grey;
+      padding:22px 15px 15px;
+      line-height: 1.4em;
+      border-radius: 5px;
+    }
+
+  
+    [data-animation] {
+        --animps: paused;
+        animation: var(--animn) var(--animdur) var(--animtf, linear) var(--animdel) var(--animic, infinite) var(--animdir, alternate) var(--animfm, none) var(--animps, running);
+    }
+  
+    /* STATE */
+    [data-animation-pause]:checked ~ [data-animation] {
+        --animps: running;
+    }
+  
+    [data-animation-pause]:checked + label::before {
+        background-color: cornflowerblue;
+    }
+  
+    @keyframes slide {
+        0% { 
+          transform: translateX(-100%);
+        }
+        100% { 
+          transform: translateX(100%);
+        }
+    }
+}

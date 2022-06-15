@@ -1,0 +1,48 @@
+@use '@/assets/scss/base/color';
+
+
+.news {
+    &__link{
+        
+        padding: 15px;
+        
+        &__title{
+            display: inline-block;
+        }
+        &__button{
+            display: inline-block;
+            margin-right: 4%;
+            &__img{
+                width: 15px;
+                -webkit-transform: rotate(180deg);
+            }
+        }
+        
+    }
+}
+.news-article{
+    text-align: left;
+    background: color.$dark-grey;
+    color: color.$white;
+    border-radius:5px;
+    overflow:hidden;
+    margin-bottom:5%;
+    padding:2%;
+    .article-link{
+        text-decoration: none;
+        color:black;
+        &__image{
+            width:100%;
+        }
+        &__author{
+            color: color.$grey;
+        }
+        &__title{
+            color: color.$white;
+
+        }
+        &__description{
+            color: color.$white;
+        }
+    }
+}

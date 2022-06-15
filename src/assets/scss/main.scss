@@ -1,0 +1,91 @@
+
+//Husk at overføre de forskellige filer i den rigtige rækkefølge.
+// add ALL SCSS FILES 
+@use './base/color';
+@use './base/typography';
+@use './items/buttons';
+@use './views/quizOverview';
+@use './components/navbar';
+@use './components/shortcut-bar';
+@use './components/countdown';
+@use './components/badges';
+@use './components/profileCard';
+@use './components/locationWeather';
+@use './components/modal';
+@use './components/moonphaseAnimation';
+@use './components/quizComponent';
+@use './components/shortcutSearch';
+@use './components/locationTracker';
+@use './views/login';
+@use './views/home';
+@use './views/profile';
+@use './views/moon';
+@use './views/lunareclipse';
+@use './views/news';
+@use './views/phases';
+@use './views/settings';
+@use './items/moon-glows';
+
+@font-face {
+  font-family:'Baloo';
+  src: url('~@/assets/fonts/BalooBhaina-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  font-size:16px;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: typography.$baloo2;
+}
+
+h1 {
+  font-family:typography.$baloo;
+  text-align: left;
+  margin:0;
+  padding:15px 0;
+  font-weight:400;
+}
+
+h2 {
+  text-align: left;
+}
+
+#app {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: color.$white;
+  background-color:color.$dark-blue;
+  min-height:100vh;
+
+  #wrapper {
+    padding:0 8% 70px 8%;
+    margin:0 auto;
+    max-width: 600px;
+  }
+}
+.view-header{
+  display: inline-block;
+}
+// Desktop
+@media screen and (min-width: 1024px){
+
+}
+
+// tablets
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+// smartphones
+@media screen and (max-width: 768px){
+
+}

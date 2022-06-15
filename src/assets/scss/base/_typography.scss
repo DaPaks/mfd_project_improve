@@ -1,0 +1,17 @@
+// if you need this file, copy paste:
+// @use '@/assets/scss/base/typography';
+// access the variables by typing typography.$baloo
+
+@font-face {
+  font-family:'Baloo Bhaina';
+  src: url('@/assets/fonts/BalooBhaina-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Baloo Bhaina 2';
+  src: url('@/assets/fonts/BalooBhaina2-VariableFont_wght.ttf') format('truetype');
+}
+//@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+
+$baloo: 'Baloo Bhaina';
+$baloo2: 'Baloo Bhaina 2';
