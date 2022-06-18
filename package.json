@@ -11,7 +11,6 @@
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.4",
     "@firebase/auth": "^0.19.12",
-    "@vue/test-utils": "^2.0.0",
     "axios": "^0.26.1",
     "core-js": "^3.8.3",
     "firebase": "^9.6.11",
